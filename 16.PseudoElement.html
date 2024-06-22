@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS - Pseudo Element</title>
+    <style>
+        .para1 {
+            font-size: 1.5em;
+            letter-spacing: 2px;
+            line-height: 1.5em;
+        }
+
+        /*.para1::first-line {
+            color: red;
+        }
+
+        .para1::first-letter {
+            color: blue;
+            font-size: 50px;
+        } */
+
+        .para1::after {
+            content: url("https://img.flaticon.com/icons/png/512/87/87390.png?size=1200x630f&pad=10,10,10,10&ext=png&bg=FFFFFFFF");
+        }
+
+        .para1::before {
+            content: "Paragraf Öncesi";
+        }
+    </style>
+</head>
+
+<body>
+    <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto ratione explicabo eaque, culpa
+        repudiandae, voluptatem earum odio labore alias omnis quam excepturi suscipit molestias voluptatibus eum
+        doloribus, officia minus! Facilis quisquam odit quo fugit, dolor eveniet cum necessitatibus, ut dignissimos
+        voluptatem ea aspernatur. Tempore nemo et, distinctio eaque libero placeat rerum hic ad sint dolorum! Ipsam
+        nostrum dignissimos minima aut. Pariatur quasi ipsam quae nisi exercitationem facilis corporis illum impedit a
+        tempora delectus, vel voluptatum, saepe soluta. Amet voluptates in, veritatis sequi autem libero minus dolore
+        ipsa consequuntur vel cum commodi dicta, quam sit rem? Ipsam quis quia nobis amet?</p>
+</body>
+
+</html>
